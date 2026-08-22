@@ -72,3 +72,29 @@ function saudacao(nome) { // nome é o parametro
 
 saudacao("Aleixo"); //"Olá, Aleixo" - "Aleixo" é o argumento
 saudacao("Isabella");
+
+//função com return
+function dobro(n){
+    return n*2;
+}
+const r = dobro(5); // r = 10
+
+//função sem return
+function avisar(msg){
+    console.log(msg);
+}
+const r2 = avisar("oi"); // r = undefined
+
+//valor padrão: usado quando o argumento não é usado
+function saudacao2(nome = 'visitante'){
+    return "Olá, " + nome;
+}
+
+const mult = function (a,b) { //2. expressão, função sem nome numa variavel
+    return a * b;
+};
+
+const sub = (a,b) => a - b; //3. arrow function (forma curta)
+
+const quad = n => n*n; //1 parâmetro: parâmetro opcionais
+const oi = () => 'olá'; //0 parâmetro: parênteses vazios obrigatórios
